@@ -1,5 +1,4 @@
-# mysql deployment
-
+# Deployment
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -45,7 +44,7 @@ spec:
           persistentVolumeClaim:
             claimName: mysql-pvc
 ---
-# mysql service
+# Service
 apiVersion: v1
 kind: Service
 metadata:
